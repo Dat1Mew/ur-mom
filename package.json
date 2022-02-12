@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Testbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dat1Mew",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "form-data": "^4.0.0",
+    "gpt-x": "^1.1.3",
+    "nekobot-api": "^2.1.0",
+    "nekos.life": "^2.0.7",
+    "node-fetch": "^3.1.1",
+    "openai-api": "^1.2.6",
+    "openai-api-node": "^1.0.0",
+    "request": "^2.88.2"
+  }
+}
