@@ -16,13 +16,45 @@ bot.on('ready', () => {
 })
 
 
-
-// Ur mom message spam
+//Ur mom spam
 bot.on('message', msg => {
     if (msg.author.bot) return;
-    else if (msg.reply('ur mom')) {
+    else if (msg.reply('ur mom'))
+    console.log(`Bot said "ur mom"`)
+})
+
+//Save every message to a file for later use
+bot.on('message', msg => {
+    if (msg.author.bot) return;
+    else if (msg.content.startsWith('!save')) {
+        var args = msg.content.split(' ');
+        var message = args.slice(1).join(' ');
+        var file = fs.createWriteStream(`./saved/${message}.txt`);
+        file.write(message);
+        file.end();
+        msg.reply(`Saved ${message}`);
     }
 })
+
+
+
+
+
+
+// Log every message and save it to a text file
+bot.on('message', msg => {
+    if (msg.author.bot) return;
+    else if (msg.content.startsWith(config.prefix)) {
+        console.log(`${msg.author.tag} used the prefix`)
+    }
+    else {
+        console.log(`${msg.author.tag} said "${msg.content}"`)
+    }
+})
+
+
+
+
 
 
 // Gerneric 
@@ -48,6 +80,8 @@ bot.on('message', (msg) => {
                 }
                 break;
 
+
+
                 // Help Command 
             case "help":
                 if (msg.member.hasPermission("ADMINISTRATOR")) {
@@ -58,7 +92,7 @@ bot.on('message', (msg) => {
                     Embed.setDescription('Shows all *working* commands for Ur Mom Bot')
                     Embed.addField('Hide', 'Hides all channels from all users', true)
                     Embed.addField('Hideone', 'Hides all channels except for the one you are currently in', true)
-                    Embed.addField('Show', 'Restores channel viewing for all users', true)
+                    Embed.addField('Show', 'Restores channel viewing for all users, **Warning** This shows **ALL** channels.', true)
                     Embed.addField('Guilds', 'Shows the number of guilds the bot is currently in', true)
                     Embed.setThumbnail('https://i.redd.it/asdbnr8yy4p51.jpg')
                     Embed.setTimestamp()
@@ -98,6 +132,25 @@ bot.on('message', (msg) => {
                     msg.channel.send("You do not have permission to use this command!")
                 }
                 break;
+            
+
+
+
+            //Say a random fact 
+            case "fact":
+                if (msg.member.hasPermission("ADMINISTRATOR")) {
+                    request('https://some-random-api.ml/facts/fact', function (error, response, body) {
+                        if (!error && response.statusCode == 200) {
+                            var fact = JSON.parse(body)
+                            msg.channel.send(fact.fact)
+                        }
+                    })
+                } else {
+                    msg.channel.send("You do not have permission to use this command!")
+                }
+                break;
+
+
 
                 // List how many guilds the bot is in
             case "guilds":
@@ -112,9 +165,9 @@ bot.on('message', (msg) => {
     }
 });
 
-// TODO: FIGURE OUT HOW TO FIX IMAGE URL - Image Url is borked shit dont work lol
-// Embed looks nice, embeds are weird. 
-// Todo: Add TheCatApi(tm)
 
+
+bot.on('error', (e) => console.error(e));
+bot.on('warn', (e) => console.warn(e));
 
 bot.login(config.token);
