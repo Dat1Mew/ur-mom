@@ -23,41 +23,19 @@ bot.on('message', msg => {
     console.log(`Bot said "ur mom"`)
 })
 
-//Save every message to a file for later use
+// "Banana puddin tonight"
 bot.on('message', msg => {
     if (msg.author.bot) return;
-    else if (msg.content.startsWith('!save')) {
-        var args = msg.content.split(' ');
-        var message = args.slice(1).join(' ');
-        var file = fs.createWriteStream(`./saved/${message}.txt`);
-        file.write(message);
-        file.end();
-        msg.reply(`Saved ${message}`);
+    else if (msg.content.toLowerCase() === 'banana pudding tonight') {
+        if (new Date().getDay() === 6) {
+            msg.channel.send('banana pudding tonight')
+        }
     }
 })
 
 
 
-
-
-
-// Log every message and save it to a text file
-bot.on('message', msg => {
-    if (msg.author.bot) return;
-    else if (msg.content.startsWith(config.prefix)) {
-        console.log(`${msg.author.tag} used the prefix`)
-    }
-    else {
-        console.log(`${msg.author.tag} said "${msg.content}"`)
-    }
-})
-
-
-
-
-
-
-// Gerneric 
+// Gerneric command handle 
 bot.on('message', (msg) => {
     const prefix = "<"
     const args = msg.content.slice(prefix.length).trim().split(/ +/g);
