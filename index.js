@@ -15,23 +15,11 @@ bot.on('ready', () => {
     })
 })
 
+//cache messages and check for deleted messages
 
-//Ur mom spam
-bot.on('message', msg => {
-    if (msg.author.bot) return;
-    else if (msg.reply('ur mom'))
-    console.log(`Bot said "ur mom"`)
-})
 
-// "Banana puddin tonight"
-bot.on('message', msg => {
-    if (msg.author.bot) return;
-    else if (msg.content.toLowerCase() === 'banana pudding tonight') {
-        if (new Date().getDay() === 6) {
-            msg.channel.send('banana pudding tonight')
-        }
-    }
-})
+
+
 
 
 
@@ -60,6 +48,7 @@ bot.on('message', (msg) => {
 
 
 
+
                 // Help Command 
             case "help":
                 if (msg.member.hasPermission("ADMINISTRATOR")) {
@@ -79,60 +68,6 @@ bot.on('message', (msg) => {
                 } else {
                     msg.channel.send("You do not have permission to use this command!")
                 }
-                break;
-
-            // Show all channels
-            case "show":
-                if (msg.member.hasPermission("ADMINISTRATOR")) {
-                    msg.guild.channels.cache.forEach(channel => {
-                        channel.updateOverwrite(msg.guild.roles.everyone, {
-                            VIEW_CHANNEL: true
-                        })
-                    })
-                    msg.channel.send("All channels have been shown!")
-                } else {
-                    msg.channel.send("You do not have permission to use this command!")
-                }
-                break;
-
-                //Hide all channels except for the current channel
-            case "hideone":
-                if (msg.member.hasPermission("ADMINISTRATOR")) {
-                    msg.guild.channels.cache.forEach(channel => {
-                        if (channel.id != msg.channel.id) {
-                            channel.updateOverwrite(msg.guild.roles.everyone, {
-                                VIEW_CHANNEL: false
-                            })
-                        }
-                    })
-                    msg.channel.send("All channels have been hidden!")
-                } else {
-                    msg.channel.send("You do not have permission to use this command!")
-                }
-                break;
-            
-
-
-
-            //Say a random fact 
-            case "fact":
-                if (msg.member.hasPermission("ADMINISTRATOR")) {
-                    request('https://some-random-api.ml/facts/fact', function (error, response, body) {
-                        if (!error && response.statusCode == 200) {
-                            var fact = JSON.parse(body)
-                            msg.channel.send(fact.fact)
-                        }
-                    })
-                } else {
-                    msg.channel.send("You do not have permission to use this command!")
-                }
-                break;
-
-
-
-                // List how many guilds the bot is in
-            case "guilds":
-                msg.channel.send(`I am in ${bot.guilds.cache.size} guilds!`)
                 break;
 
                 
