@@ -5,6 +5,8 @@ const constants = require("./node_modules/discord.js/src/util/Constants.js");
 constants.DefaultOptions.ws.properties.$browser = "Discord iOS";
 const bot = new Discord.Client();Embed = new Discord.MessageEmbed()
 const request = require('request');
+const fs = require('fs');
+
 
 
 
@@ -90,15 +92,8 @@ bot.on('message', (msg) => {
                 
                 //Save console to console.txt
             case "saveconsole":
-                if (msg.member.hasPermission("ADMINISTRATOR")) {
-                    fs.writeFile('console.txt', console.log, function (err) {
-                        if (err) throw err;
-                    });
-                    msg.channel.send("Console has been saved to console.txt!")
-                } else {
-                    msg.channel.send("You do not have permission to use this command!")
-                }
-                break;
+
+
 
 
 
