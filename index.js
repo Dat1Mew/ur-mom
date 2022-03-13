@@ -15,10 +15,27 @@ bot.on('ready', () => {
     })
 })
 
-//cache messages and check for deleted messages
 
 
 
+//Autosave console to console.txt every minute
+setInterval(function () {
+    var date = new Date();
+    var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    var text = time + " - " + console.log;
+    fs.appendFile('console.txt', text + "\n", function (err) {
+        if (err) throw err;
+    });
+}, 60000);
+
+
+
+//Restart bot if it crashes
+process.on('uncaughtException', function (err) {
+    console.log(err);
+    console.log("Restarting...");
+    process.exit(1);
+});
 
 
 
@@ -45,6 +62,46 @@ bot.on('message', (msg) => {
                     msg.channel.send("You do not have permission to use this command!")
                 }
                 break;
+
+
+                //Save all messages of a pinged user to console and say who sent them with time stamp 
+            case "save":
+                if (msg.member.hasPermission("ADMINISTRATOR")) {
+                    let user = msg.mentions.users.first()
+                    if (user) {
+                        let messages = msg.channel.messages.fetch({
+                            limit: 100
+                        }).then(messages => {
+                            messages.forEach(message => {
+                                if (message.author.id === user.id) {
+                                    console.log(`${message.author.username} - ${message.createdAt} - ${message.content}`)
+                                }
+                            })
+                        })
+                        msg.channel.send(`${user.username}'s messages have been saved to console!`)
+                    } else {
+                        msg.channel.send("Please mention a user!")
+                    }
+                } else {
+                    msg.channel.send("You do not have permission to use this command!")
+                }
+                break;
+                
+                
+                //Save console to console.txt
+            case "saveconsole":
+                if (msg.member.hasPermission("ADMINISTRATOR")) {
+                    fs.writeFile('console.txt', console.log, function (err) {
+                        if (err) throw err;
+                    });
+                    msg.channel.send("Console has been saved to console.txt!")
+                } else {
+                    msg.channel.send("You do not have permission to use this command!")
+                }
+                break;
+
+
+
 
 
 
