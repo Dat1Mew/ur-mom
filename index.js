@@ -17,21 +17,6 @@ bot.on('ready', () => {
     })
 })
 
-
-
-
-//Autosave console to console.txt every minute
-setInterval(function () {
-    var date = new Date();
-    var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-    var text = time + " - " + console.log;
-    fs.appendFile('console.txt', text + "\n", function (err) {
-        if (err) throw err;
-    });
-}, 60000);
-
-
-
 //Restart bot if it crashes
 process.on('uncaughtException', function (err) {
     console.log(err);
