@@ -90,14 +90,82 @@ bot.on('message', (msg) => {
                 break;
                 
                 
-                //Save console to console.txt
+                //Save console to a text file 
             case "saveconsole":
+                if (msg.member.hasPermission("ADMINISTRATOR")) {
+                    fs.readFile('console.txt', 'utf8', function (err, data) {
+                        if (err) throw err;
+                        fs.writeFile('console.txt', data, function (err) {
+                            if (err) throw err;
+                            msg.channel.send("Console has been saved!")
+                        });
+                    });
+                } else {
+                    msg.channel.send("You do not have permission to use this command!")
+                }
+                break;
 
 
+                                //Save all messages of a pinged user to console.txt and say who sent them with time stamp 
+            case "save2":
+                if (msg.member.hasPermission("ADMINISTRATOR")) {
+                    let user = msg.mentions.users.first()
+                    if (user) {
+                        let messages = msg.channel.messages.fetch({
+                            limit: 100
+                        }).then(messages => {
+                            messages.forEach(message => {
+                                if (message.author.id === user.id) {
+                                    fs.appendFile('console.txt', `${message.author.username} - ${message.createdAt} - ${message.content}\n`, function (err) {
+                                        if (err) throw err;
+                                    });
+                                }
+                            })
+                        })
+                        msg.channel.send(`${user.username}'s messages have been saved to console!`)
+                    } else {
+                        msg.channel.send("Please mention a user!")
+                    }
+                } else {
+                    msg.channel.send("You do not have permission to use this command!")
+                }
+                break;
 
+                //send consone.txt as a file
+            case "sendlog":
+                if (msg.member.hasPermission("ADMINISTRATOR")) {
+                    msg.channel.send("", {
+                        files: ["console.txt"]
+                    })
+                } else {
+                    msg.channel.send("You do not have permission to use this command!")
+                }
+                break;
 
-
-
+                // Clear console.txt and ask for confirmation
+            case "clear":
+                if (msg.member.hasPermission("ADMINISTRATOR")) {
+                    msg.channel.send("Are you sure you want to clear the console? (y/n)")
+                    msg.channel.awaitMessages(m => m.author.id === msg.author.id, {
+                        max: 1,
+                        time: 30000,
+                        errors: ['time']
+                    }).then(collected => {
+                        if (collected.first().content.toLowerCase() === "y") {
+                            fs.writeFile('console.txt', "", function (err) {
+                                if (err) throw err;
+                                msg.channel.send("Console has been cleared!")
+                            });
+                        } else {
+                            msg.channel.send("Console has not been cleared!")
+                        }
+                    }).catch(() => {
+                        msg.channel.send("Console has not been cleared!")
+                    })
+                } else {
+                    msg.channel.send("You do not have permission to use this command!")
+                }
+                break;
 
 
 

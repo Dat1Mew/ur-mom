@@ -1,0 +1,79 @@
+0:13:50 - function () { [native code] }
+Dat1Mew - Sun Mar 13 2022 00:14:33 GMT-0600 (Central Standard Time) - <save2 <@!269964640421675018>
+Dat1Mew - Sun Mar 13 2022 00:13:01 GMT-0600 (Central Standard Time) - y
+Dat1Mew - Sun Mar 13 2022 00:13:13 GMT-0600 (Central Standard Time) - YES
+Dat1Mew - Sun Mar 13 2022 00:13:08 GMT-0600 (Central Standard Time) - <sendlog
+Dat1Mew - Sun Mar 13 2022 00:12:59 GMT-0600 (Central Standard Time) - <clear
+Dat1Mew - Sun Mar 13 2022 00:09:53 GMT-0600 (Central Standard Time) - <save2 <@!415001701565857812>
+Dat1Mew - Sun Mar 13 2022 00:09:56 GMT-0600 (Central Standard Time) - <sendlog
+Dat1Mew - Sat Mar 12 2022 23:58:33 GMT-0600 (Central Standard Time) - <saveconsole
+Dat1Mew - Sat Mar 12 2022 23:58:18 GMT-0600 (Central Standard Time) - lets see
+Dat1Mew - Sat Mar 12 2022 23:58:13 GMT-0600 (Central Standard Time) - it didnt do shit
+Dat1Mew - Sat Mar 12 2022 23:57:23 GMT-0600 (Central Standard Time) - <saveconsole
+Dat1Mew - Sat Mar 12 2022 23:58:02 GMT-0600 (Central Standard Time) - WAIT
+Dat1Mew - Sat Mar 12 2022 23:57:17 GMT-0600 (Central Standard Time) - <save <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 23:57:58 GMT-0600 (Central Standard Time) - <saveconsole
+Dat1Mew - Sat Mar 12 2022 23:57:09 GMT-0600 (Central Standard Time) - <log <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 23:51:17 GMT-0600 (Central Standard Time) - WWWWWWWWAAAAAAAAAA
+Dat1Mew - Sat Mar 12 2022 23:56:24 GMT-0600 (Central Standard Time) - <saveconsole
+Dat1Mew - Sat Mar 12 2022 23:58:23 GMT-0600 (Central Standard Time) - <save <@!269964640421675018>
+Dat1Mew - Sun Mar 13 2022 00:01:26 GMT-0600 (Central Standard Time) - <saveconsole2 <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 23:51:11 GMT-0600 (Central Standard Time) - <saveconsole
+Dat1Mew - Sat Mar 12 2022 23:49:27 GMT-0600 (Central Standard Time) - <saveconsole
+Dat1Mew - Sat Mar 12 2022 23:16:10 GMT-0600 (Central Standard Time) - FUCk
+Dat1Mew - Sat Mar 12 2022 23:16:17 GMT-0600 (Central Standard Time) - failed to restart too
+Dat1Mew - Sat Mar 12 2022 23:17:05 GMT-0600 (Central Standard Time) - <saveconsole
+Dat1Mew - Sat Mar 12 2022 23:49:37 GMT-0600 (Central Standard Time) - fs not defined
+Dat1Mew - Sat Mar 12 2022 23:16:08 GMT-0600 (Central Standard Time) - <saveconsole
+Dat1Mew - Sat Mar 12 2022 23:12:23 GMT-0600 (Central Standard Time) - <console
+Dat1Mew - Sat Mar 12 2022 23:14:17 GMT-0600 (Central Standard Time) - Console should save to a file
+Dat1Mew - Sat Mar 12 2022 23:14:27 GMT-0600 (Central Standard Time) - <save <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 23:12:12 GMT-0600 (Central Standard Time) - test 2
+Dat1Mew - Sat Mar 12 2022 23:12:15 GMT-0600 (Central Standard Time) - console
+Dat1Mew - Sat Mar 12 2022 23:05:09 GMT-0600 (Central Standard Time) - <save <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 23:04:56 GMT-0600 (Central Standard Time) - Image test 2 embed
+Dat1Mew - Sat Mar 12 2022 23:06:21 GMT-0600 (Central Standard Time) - <save 415001701565857812
+Dat1Mew - Sat Mar 12 2022 23:04:46 GMT-0600 (Central Standard Time) - Image test1
+Dat1Mew - Sat Mar 12 2022 23:04:28 GMT-0600 (Central Standard Time) - gif test 1
+Dat1Mew - Sat Mar 12 2022 23:06:33 GMT-0600 (Central Standard Time) - <save <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 23:06:24 GMT-0600 (Central Standard Time) - really
+Dat1Mew - Sat Mar 12 2022 23:04:43 GMT-0600 (Central Standard Time) - 
+Dat1Mew - Sat Mar 12 2022 23:04:21 GMT-0600 (Central Standard Time) - https://tenor.com/view/cat-speech-bubble-gif-25026388
+Dat1Mew - Sat Mar 12 2022 23:04:11 GMT-0600 (Central Standard Time) - <save <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 23:04:25 GMT-0600 (Central Standard Time) - https://tenor.com/view/poof-mei-lee-turning-red-poofing-panda-gif-22488728
+Dat1Mew - Sat Mar 12 2022 23:00:26 GMT-0600 (Central Standard Time) - <save <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 22:59:33 GMT-0600 (Central Standard Time) - <save <@!415001701565857812>
+Dat1Mew - Sat Mar 12 2022 22:59:13 GMT-0600 (Central Standard Time) - FUCK
+Dat1Mew - Sat Mar 12 2022 22:59:10 GMT-0600 (Central Standard Time) - <save <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 22:59:36 GMT-0600 (Central Standard Time) - get pinged
+Dat1Mew - Sat Mar 12 2022 22:59:24 GMT-0600 (Central Standard Time) - <save
+Dat1Mew - Sat Mar 12 2022 22:57:13 GMT-0600 (Central Standard Time) - WHY
+Dat1Mew - Sat Mar 12 2022 22:57:10 GMT-0600 (Central Standard Time) - wa
+Dat1Mew - Sat Mar 12 2022 22:57:08 GMT-0600 (Central Standard Time) - <log aw
+Dat1Mew - Sat Mar 12 2022 22:56:48 GMT-0600 (Central Standard Time) - BRUH
+Dat1Mew - Sat Mar 12 2022 22:56:33 GMT-0600 (Central Standard Time) - <log <@!269964640421675018>
+Dat1Mew - Sat Mar 12 2022 22:56:45 GMT-0600 (Central Standard Time) - oh
+Dat1Mew - Sat Mar 12 2022 22:56:42 GMT-0600 (Central Standard Time) - where the fuck are you logging to
+Dat1Mew - Sat Mar 12 2022 22:45:45 GMT-0600 (Central Standard Time) - <@!363115316558954496> try now
+Dat1Mew - Sat Mar 12 2022 22:45:41 GMT-0600 (Central Standard Time) - yee hawe
+Dat1Mew - Sat Mar 12 2022 22:44:27 GMT-0600 (Central Standard Time) - back to spamming <@!363115316558954496>
+Dat1Mew - Sat Mar 12 2022 22:35:56 GMT-0600 (Central Standard Time) - <@!363115316558954496>
+Dat1Mew - Sat Mar 12 2022 22:41:29 GMT-0600 (Central Standard Time) - <@!363115316558954496> spam some shit
+Dat1Mew - Sat Mar 12 2022 22:35:34 GMT-0600 (Central Standard Time) - Yes or no
+Dat1Mew - Sat Mar 12 2022 22:40:43 GMT-0600 (Central Standard Time) - Alrighty then
+Dat1Mew - Sat Mar 12 2022 22:34:42 GMT-0600 (Central Standard Time) - <@!363115316558954496> Are you willing to be a labrat?
+Dat1Mew - Sat Mar 12 2022 22:34:55 GMT-0600 (Central Standard Time) - this will envolve you getting banned over and over again
+Dat1Mew - Mon Feb 21 2022 19:41:15 GMT-0600 (Central Standard Time) - thank the bot
+Dat1Mew - Mon Feb 21 2022 19:41:12 GMT-0600 (Central Standard Time) - just not for everybody
+Dat1Mew - Mon Feb 21 2022 19:41:07 GMT-0600 (Central Standard Time) - they exist
+Dat1Mew - Thu Feb 17 2022 20:47:47 GMT-0600 (Central Standard Time) - TEst
+Dat1Mew - Thu Feb 17 2022 20:46:01 GMT-0600 (Central Standard Time) - jwad
+Dat1Mew - Thu Feb 17 2022 20:46:09 GMT-0600 (Central Standard Time) - !save
+0:14:50 - function () { [native code] }
+0:15:50 - function () { [native code] }
+0:16:50 - function () { [native code] }
+0:17:50 - function () { [native code] }
+0:18:50 - function () { [native code] }
+0:19:50 - function () { [native code] }
+0:20:50 - function () { [native code] }
+0:21:50 - function () { [native code] }
